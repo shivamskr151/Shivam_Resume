@@ -7,22 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
-    .left, .right {
-  float: left;
-  width: 20%; /* The width is 20%, by default */
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.main {
-  float: left;
-  width: 60%; /* The width is 60%, by default */
-}
 
-/* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 800px) {
-  .left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
+        nav {
+            display: flex;
+
+            padding: 0.5em;
+        }
+
+        section {
+            padding: 1em;
+        }
+        footer {
+            padding: 1em;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5em 0;
+            }
+        }
     </style>
     <title>Shivam's Resume</title>
 </head>
